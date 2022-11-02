@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+:root{
+    --bs-dark: #212529;
+    --white: rgb(246, 242, 242);
+    --pink: rgb(190,116,128);
+    --purple: #6f42c1;
+    --light-purple: #b1a0d1;
+    --blue:#00397a;
+    --font-family1: 'Montserrat', sans-serif;
+    --font-family2: 'Roboto', sans-serif;
+    --gray: #6c757d;
+    --bs-primary: #0d6efd;
+
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 22;
+}
+.main-btn{
+    background-color: transparent;
+    color: var(--white);
+    padding: 0.75rem;
+    margin: 10px;
+    font-size: 1.2rem;
+
+    border: 2px solid var(--purple);
+    /* border-radius: 1.7rem; */
+    transition: all 0.3s ease-in-out;
+}
+.main-btn:hover{
+    background-color: var(--light-purple);
+    border-color: var(--white);
+    color: var(--bs-dark);
+    transform: scale(1.1);
+}
+.fill-btn{
+    background-color: var(--purple);
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: var(--font-family2);
+    color: var(--bs-orange);
+}
+h2{
+    font-size: 2.53rem;
+    font-weight: 600;
+    font-family: var(--font-family2);
+}
+h3{
+    font-size: 2.33rem;
+    font-weight: 600;
+    font-family: var(--font-family2);
+}
+h4{
+    font-size: 2.03rem;
+    font-weight: 600;
+    font-family: var(--font-family2);
+}
+h5{
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: var(--font-family2);
+    color: var(--purple);
+}
+h6{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--font-family2);
+}
+p{
+    font-size: 1.1rem;
+    color: var(--bs-gray);
+}
+.card{
+    background-color:white;
+    border-radius: 0.65rem;
+    padding: 2.8rem 2.5rem ;
+
+    box-shadow: 0.536rem 1.141rem 2.5rem  0  rgb(0 0 0 /7%);
+    border: 0;
+}
+
+a{
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width:600px) {
+    .main-btn{
+        padding: 0.42rem;
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 2.22rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.72rem;
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    h5{
+        font-size: 1.3rem;
+    }
+    h6{
+        font-size: 1.16rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    .card{
+        padding: 1.8rem 1rem;
+    }
+    a{
+        font-size: 1rem;
+    }
+}
+
+
+
+/* navbar design starts here */
+
+.container-fluid  .navbar-toggler{
+    font-size: 1.2rem;
+    box-shadow: none;
+    border: 0;
+}
+.container-fluid  .navbar-brand{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--bs-purple);
+}
+.span{
+    color: var(--bs-orange);
+}
+.container-fluid .nav-item .nav-link:hover,
+.container-fluid .nav-item .nav-link:focus
+{
+    color: var(--pink);
+}
+@media screen and (max-width:600px) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container-fluid  .navbar-toggler{
+        font-size: 0.9rem;
+        margin-left: 0;
+        padding: 0;
+    }
+    .container-fluid  .navbar-brand{
+        font-size: 1.3rem;
+        margin-right: 0.2rem;
+    }
+}
+/* navbar design ends here */
+
+
+/* banner design starts here */ 
+.banner-wrapper{
+    background-image: url("image/bg-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    
+}
+/* .banner-wrapper .top-right-img{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    position: relative;
+} */
+.banner-wrapper .top-right-img .ani-img{
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+    position: relative;
+    animation: ani-img 4s linear 1s infinite;
+
+    /* animation-name: ani-img;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite; */
+} 
+@keyframes ani-img {
+    0% {
+        top:10px;
+        left: 0;
+    }
+    50% {
+        top: 60px;
+        left: 0;
+    }
+    100% {
+        top:0;
+        left: 0;
+    }
+    
+}
+
+/* about design starts here */
+.about-wrapper .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* width: 50%; */
+}
+.about-wrapper .about-clinic{
+    flex: 0 0 auto;
+    width: 50%;
+}
+/* about design ends here */
+
+
+/* services design starts here */
+.service-wrapper .container-fluid{
+    background-color: var(--blue);
+    
+}
+.service-wrapper h3{
+    color: var(--bs-orange);
+}
+.service-wrapper .card{
+    box-shadow: 2px 3px 3px 2px;
+}
+/* service design ends here */
+
+
+/* team design starts here */
+.team-wrapper .card:hover{
+    transform: translateY(-0.725rem);
+}
+.team-wrapper h3{
+    color: var(--bs-orange);
+}
+.team-wrapper .container .icon-box .img-fluid{
+    padding: 5px ;
+    border: 5px solid rgb(239, 238, 238);
+    border-radius: 60%;
+    height: 13rem;
+}
+.team-wrapper .container .card-body a{
+    font-size: 1.4rem; 
+    padding: 3px;
+    margin: 5px;
+}
+/* team design end here */
+
+/* picture sec starts here */
+.picture-wrapper h3{
+    color: var(--bs-orange);
+}
+/* picture sec ends here */
+
+/* contact & footer design starts here */
+.contact-wrapper{
+    background-color: var(--blue);
+    padding: 1rem;
+}
+.contact-wrapper h6{
+    color: var(--white);
+}
+.contact-wrapper ul li{
+    margin-bottom: 0.5rem;
+    list-style: none;
+    font-size: 0.758rem;
+}
+.contact-wrapper ul li a{
+    color: var(--white);
+}
+.contact-wrapper ul li a:hover{
+    color: var(--pink);
+}
+.contact-wrapper p{
+    color: var(--white);
+    font-size: 1.1rem;
+}
+.contact-wrapper .form-control{
+    font-size: 1.2rem;
+}
+.contact-wrapper .main-btn{
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+.contact-wrapper .social-network a{
+    display: inline-block;
+    width: 2.64rem;
+    height: 2.64rem;
+    margin: 0.5rem;
+    border: 0.125rem solid var(--white) ;
+    line-height: 2rem ;
+    border-radius: 100%;
+    text-align: center;
+    transition: all 0.3s;
+}
+.contact-wrapper .social-network a:hover{
+    transform:translateY(-0.187rem);
+    background-color: var(--pink);
+    color: var(--white);
+}
+.container-fluid .p{
+    font-size: 1.2rem;
+    color: var(--bs-orange);
+}
+@media screen and (max-width:600px) {
+    .contact-wrapper{
+        padding: 0.9rem;
+    }
+    .contact-wrapper ul li{
+        font-size: 0.612rem;
+    }
+    .contact-wrapper p{
+        font-size: 0.932rem;
+    }
+    .contact-wrapper .form-control{
+        font-size: 1rem;
+    }
+    .contact-wrapper .main-btn{
+        border-radius: 5px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .contact-wrapper .social-network a{
+        width: 1.64rem;
+        height: 1.64rem;
+        margin: 0.3rem;
+        border: 0.125rem solid var(--white) ;
+        line-height: 1.4rem ;
+        border-radius: 70%;
+        
+    }
+    .container-fluid .p{
+        font-size: 1rem;
+    }
+}
+/* contact & footer section design ends here */
