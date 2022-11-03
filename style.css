@@ -47,17 +47,19 @@ h1{
     font-size: 3rem;
     font-weight: 600;
     font-family: var(--font-family2);
-    color: var(--bs-orange);
+    color: var(--purple);
 }
 h2{
     font-size: 2.53rem;
     font-weight: 600;
     font-family: var(--font-family2);
+    color: var(--bs-orange);
 }
 h3{
     font-size: 2.33rem;
     font-weight: 600;
     font-family: var(--font-family2);
+    color: var(--bs-orange);
 }
 h4{
     font-size: 2.03rem;
@@ -233,9 +235,6 @@ a:hover{
     background-color: var(--blue);
     
 }
-.service-wrapper h3{
-    color: var(--bs-orange);
-}
 .service-wrapper .card{
     box-shadow: 2px 3px 3px 2px;
 }
@@ -245,9 +244,6 @@ a:hover{
 /* team design starts here */
 .team-wrapper .card:hover{
     transform: translateY(-0.725rem);
-}
-.team-wrapper h3{
-    color: var(--bs-orange);
 }
 .team-wrapper .container .icon-box .img-fluid{
     padding: 5px ;
@@ -262,11 +258,6 @@ a:hover{
 }
 /* team design end here */
 
-/* picture sec starts here */
-.picture-wrapper h3{
-    color: var(--bs-orange);
-}
-/* picture sec ends here */
 
 /* contact & footer design starts here */
 .contact-wrapper{
